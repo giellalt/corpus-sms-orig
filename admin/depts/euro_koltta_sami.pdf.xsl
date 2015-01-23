@@ -4,7 +4,7 @@
     <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes" doctype-public="-//UIT//DTD Corpus V1.0//EN" doctype-system="http://giellatekno.uit.no/dtd/corpus.dtd"/>
     
     <!-- Add the metainformation manually -->
-    <xsl:variable name="filename" select="'euro_koltta_sami.pdf'"/>
+    <xsl:variable name="filename" select="'http://ec.europa.eu/avservices/avs/files/euro/092-euro-fi/Euro_koltta_sami.pdf'"/>
     <xsl:variable name="title" select="'Lääʹ́ddjânnam serdd eurru'"/>
     <xsl:variable name="author1_fn" select="''"/>
     <xsl:variable name="author1_ln" select="''"/>
@@ -41,16 +41,17 @@
     <xsl:variable name="translator_born" select="''"/>
     <xsl:variable name="translator_nat" select="''"/>
     <xsl:variable name="license_type" select="'free'"/>
-    <xsl:variable name="sub_name" select="''"/>
-    <xsl:variable name="sub_email" select="''"/>
+    <xsl:variable name="sub_name" select="'Trond Trosterud'"/>
+    <xsl:variable name="sub_email" select="'trond.trosterud@uit.no'"/>
     <xsl:variable name="wordcount" select="''"/>
     <xsl:variable name="metadata" select="'uncomplete'"/>
     <xsl:variable name="template_version" select="' 1.9 '"/>
     <xsl:variable name="current_version" select="'$Revision: 1.7 $'"/>
     
-    
     <!-- Free text field for notes -->
-    <xsl:variable name="note" select="''"/>
+    <xsl:variable name="note" select="'see also the other language
+				      variants of this document (among
+				      them sme, smn, fin, etc.): http://ec.europa.eu/avservices/avs/files/euro/092-euro-fi/'"/>
     
     <!-- The main language of the document -->
     <xsl:variable name="mainlang" select="'sms'"/>
