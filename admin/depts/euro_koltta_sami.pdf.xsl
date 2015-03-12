@@ -49,9 +49,7 @@
     <xsl:variable name="current_version" select="'$Revision: 1.7 $'"/>
     
     <!-- Free text field for notes -->
-    <xsl:variable name="note" select="'see also the other language
-				      variants of this document (among
-				      them sme, smn, fin, etc.): http://ec.europa.eu/avservices/avs/files/euro/092-euro-fi/'"/>
+    <xsl:variable name="note" select="'see also the other language           variants of this document (among           them sme, smn, fin, etc.): http://ec.europa.eu/avservices/avs/files/euro/092-euro-fi/'"/>
     
     <!-- The main language of the document -->
     <xsl:variable name="mainlang" select="'sms'"/>
@@ -104,4 +102,8 @@
         <parallel_text location="euro_koltta_sami.pdf" xml:lang="swe"/>
     </xsl:variable>
     
+<xsl:variable name="bottom_margin" select="all=7"/>
+<xsl:variable name="left_margin" select="all=7"/>
+<xsl:variable name="top_margin" select="all=7"/>
+<xsl:variable name="right_margin" select="all=7"/>
 </xsl:stylesheet>
