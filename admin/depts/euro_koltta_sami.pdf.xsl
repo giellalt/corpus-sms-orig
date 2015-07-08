@@ -99,7 +99,7 @@
      filename changed.
      -->
     <xsl:variable name="parallels">
-        <parallel_text location="euro_koltta_sami.pdf" xml:lang="swe"/>
+<!--         <parallel_text location="euro_koltta_sami.pdf" xml:lang="swe"/> -->
     </xsl:variable>
     
 <xsl:variable name="bottom_margin" select="all=7"/>
