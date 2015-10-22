@@ -66,7 +66,7 @@
 <!-- In the case of a multilingual document, we may want to check for
      other languages. Set the variable monolingual to '1' to turn off
      language recognition (treating everything as mainlang) -->
-<xsl:variable name="monolingual" select="''"/> 
+<xsl:variable name="monolingual" select="''"/>
 
 <!-- If monolingual is not set, the language is multilingual.
      Uncomment the languages you want to check for (or add new lines
@@ -133,7 +133,7 @@ These are defaults, that are settable documentwise -->
 <!-- of elements - then only one of them will apply. Also try -->
 <!-- to restrict the template to nodes that do not contain    -->
 <!-- other markup, as such markup otherwise will be removed.  -->
-<!--
+
 <xsl:template match="p[parent::body][not(./em | ./span)][text()]">
     <xsl:variable name="text" select='current()' />
     <xsl:variable name="type" select='@type' />
@@ -152,12 +152,11 @@ These are defaults, that are settable documentwise -->
 
         <xsl:call-template name="globalTextReplace">
             <xsl:with-param name="inputString" select="$text"/>
-            <xsl:with-param name="target" select="'str1/str2/str3/'"/>
-            <xsl:with-param name="replacement" select="'rpl1/rpl2/rpl3/'"/>
+            <xsl:with-param name="target" select="'¡/'"/>
+            <xsl:with-param name="replacement" select="'ǧ/'"/>
             <xsl:with-param name="continue" select="0"/>
         </xsl:call-template>
     </xsl:element>
 </xsl:template>
--->
 
 </xsl:stylesheet>

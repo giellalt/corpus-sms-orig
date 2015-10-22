@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- Format query results for display --><xsl:stylesheet xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-    
+
     <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes" doctype-public="-//UIT//DTD Corpus V1.0//EN" doctype-system="http://giellatekno.uit.no/dtd/corpus.dtd"/>
-    
+
     <!-- Add the metainformation manually -->
     <xsl:variable name="filename" select="'http://ec.europa.eu/avservices/avs/files/euro/092-euro-fi/Euro_koltta_sami.pdf'"/>
     <xsl:variable name="title" select="'Lääʹ́ddjânnam serdd eurru'"/>
@@ -47,30 +47,30 @@
     <xsl:variable name="metadata" select="'uncomplete'"/>
     <xsl:variable name="template_version" select="' 1.9 '"/>
     <xsl:variable name="current_version" select="'$Revision: 1.7 $'"/>
-    
+
     <!-- Free text field for notes -->
     <xsl:variable name="note" select="'see also the other language           variants of this document (among           them sme, smn, fin, etc.): http://ec.europa.eu/avservices/avs/files/euro/092-euro-fi/'"/>
-    
+
     <!-- The main language of the document -->
     <xsl:variable name="mainlang" select="'sms'"/>
-    
+
     <!-- Other languages, in case of multilingual document. -->
     <!-- Select "1" for the variable multilingual -->
     <!-- and for the languages present -->
     <!--Select "1" for monolingual to turn language recog off-->
     <xsl:variable name="monolingual" select="'1'"/>
-    
-    
+
+
     <!-- If monolingual is not set, the language is multilingual.
      Uncomment the languages you want to check for (or add new lines
      with the right ISO-639-3 language codes).
-     
+
      If *no* languages are uncommented (and monolingual is not 1),
      then the document is checked for all supported languages.
 -->
     <xsl:variable name="mlangs">
     </xsl:variable>
-    
+
     <!-- Add all paragraphs that should have xml:lang=X-->
     <!-- Uncomment the following and add the paths, for example: -->
     <!-- <xsl:template match="/root/section[2]/paragraph[5] |
@@ -85,15 +85,15 @@
 </xsl:element>
  </xsl:template>
 -->
-    
+
     <!-- Add the locations of the parallel files to the variables-->
-    
-    
+
+
     <!-- If the document has parallel texts, uncomment the right languages
      (or add new lines with the right ISO-639-3 language codes) and
      add the filename of the parallel files to the 'location'
      variables.
-     
+
      Don't write the full directory; we expect the file to be in the
      same directory as this file, with only the language code and
      filename changed.
@@ -101,9 +101,35 @@
     <xsl:variable name="parallels">
 <!--         <parallel_text location="euro_koltta_sami.pdf" xml:lang="swe"/> -->
     </xsl:variable>
-    
+
 <xsl:variable name="bottom_margin" select="all=7"/>
 <xsl:variable name="left_margin" select="all=7"/>
 <xsl:variable name="top_margin" select="all=7"/>
 <xsl:variable name="right_margin" select="all=7"/>
+
+<xsl:template match="body/*">
+    <xsl:variable name="text" select='current()' />
+    <xsl:variable name="type" select='@type' />
+    <xsl:variable name="lang" select='@xml:lang' />
+    <xsl:element name="p">
+        <xsl:if test="$type">
+            <xsl:attribute name="type">
+                <xsl:value-of select="$type"/>
+            </xsl:attribute>
+        </xsl:if>
+        <xsl:if test="$lang">
+            <xsl:attribute name="xml:lang">
+                <xsl:value-of select="$lang"/>
+            </xsl:attribute>
+        </xsl:if>
+
+        <xsl:call-template name="globalTextReplace">
+            <xsl:with-param name="inputString" select="$text"/>
+            <xsl:with-param name="target" select="'¡/³/¥/ˆ/'"/>
+            <xsl:with-param name="replacement" select="'ǧ/ǩ/ǥ/ǯ/'"/>
+            <xsl:with-param name="continue" select="0"/>
+        </xsl:call-template>
+    </xsl:element>
+</xsl:template>
+
 </xsl:stylesheet>
