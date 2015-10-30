@@ -93,7 +93,7 @@
      -->
 <xsl:variable name="parallels">
 	<parallel_text location="index.php_option=com_content_task=view_id=161_itemid=195_lang=english.html" xml:lang="eng"/>
-	<parallel_text location="index.php_option=com_content_task=view_id=161_itemid=195_lang=finnish.html" xml:lang="fin"/>
+	<parallel_text location="" xml:lang="fin"/>
 	<parallel_text location="index.php_option=com_content_task=view_id=161_itemid=195_lang=davvi.html" xml:lang="sme"/>
 	<parallel_text location="index.php_option=com_content_task=view_id=161_itemid=195_lang=anaras.html" xml:lang="smn"/>
 </xsl:variable>
@@ -135,9 +135,9 @@ These are defaults, that are settable documentwise -->
 <!-- other markup, as such markup otherwise will be removed.  -->
 
 <xsl:template match="p[parent::body][not(./em | ./span)][text()]">
-    <xsl:variable name="text" select='current()' />
-    <xsl:variable name="type" select='@type' />
-    <xsl:variable name="lang" select='@xml:lang' />
+    <xsl:variable name="text" select="current()"/>
+    <xsl:variable name="type" select="@type"/>
+    <xsl:variable name="lang" select="@xml:lang"/>
     <xsl:element name="p">
         <xsl:if test="$type">
             <xsl:attribute name="type">
