@@ -95,7 +95,7 @@
 	<parallel_text location="index.php_option=com_content_task=blogsection_id=15_itemid=118_lang=english.html" xml:lang="eng"/>
 	<parallel_text location="index.php_option=com_content_task=blogsection_id=15_itemid=118_lang=finnish.html" xml:lang="fin"/>
 	<parallel_text location="" xml:lang="sme"/>
-	<parallel_text location="index.php_option=com_content_task=blogsection_id=15_itemid=118_lang=anaras.html" xml:lang="smn"/>
+	<parallel_text location="" xml:lang="smn"/>
 </xsl:variable>
 
 <!-- For page oriented documents, mark which pages should be ignored -->
