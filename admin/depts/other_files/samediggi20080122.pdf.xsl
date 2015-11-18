@@ -7,7 +7,7 @@
 <!-- variable filename contains the original name of the file (from submitter)-->
 <xsl:variable name="filename" select="'sámediggi20080122'"/>
 <xsl:variable name="text_encoding" select="''"/>
-<xsl:variable name="title" select="'Nuõrttsää ́m ljiõlltuâjjlaž'"/>
+<xsl:variable name="title" select="'Nuõrttsääʹm ǩiõlltuâjjlaž'"/>
 <xsl:variable name="author1_fn" select="''"/>
 <xsl:variable name="author1_ln" select="''"/>
 <xsl:variable name="author1_gender" select="'unknown'"/>
@@ -106,7 +106,7 @@
 <!-- Change or remove problematic characters from the text. -->
 <!-- add the template to match (here all p:s), and write the -->
 <!-- replaced characters and the replacements. -->
-<!--
+
 <xsl:template match="p">
 <xsl:variable name="text" select='current()' />
 <xsl:variable name="type" select='@type' />
@@ -125,13 +125,13 @@
 
             <xsl:call-template name="globalTextReplace">
                <xsl:with-param name="inputString" select="$text"/>
-               <xsl:with-param name="target" select="'str1/str2/str3/'"/>
-               <xsl:with-param name="replacement" select="'rpl1/rpl2/rpl3/'"/>
+               <xsl:with-param name="target" select="'ǈ/ǉ/ǅ/Ǉ/Ǐ/ñ/'"/>
+               <xsl:with-param name="replacement" select="'Ǩ/ǩ/ǥ/ǧ/ǯ/đ/'"/>
                 <xsl:with-param name="continue" select="0"/>
             </xsl:call-template>
 </xsl:element>
 </xsl:template>
--->
+
 
 <xsl:variable name="bottom_margin" select="all=7"/>
 <xsl:variable name="left_margin" select="all=7"/>
