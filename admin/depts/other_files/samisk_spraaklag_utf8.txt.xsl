@@ -4,7 +4,7 @@
 <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes" doctype-public="-//UIT//DTD Corpus V1.0//EN" doctype-system="http://giellatekno.uit.no/dtd/corpus.dtd"/>
 
 <!-- Add the metainformation manually -->
-<xsl:variable name="filename" select="'samisk_språklag.pdf'"/>
+<xsl:variable name="filename" select="'samisk_spraaklag_utf8.txt'"/>
 <xsl:variable name="title" select="''"/>
 <xsl:variable name="author1_fn" select="''"/>
 <xsl:variable name="author1_ln" select="''"/>
@@ -107,12 +107,12 @@
             </xsl:attribute>
             </xsl:if>
 
-            <xsl:call-template name="globalTextReplace">
+            <!--xsl:call-template name="globalTextReplace">
                <xsl:with-param name="inputString" select="$text"/>
                <xsl:with-param name="target" select="'¦/'"/>
                <xsl:with-param name="replacement" select="'ǥ/'"/>
                 <xsl:with-param name="continue" select="0"/>
-            </xsl:call-template>
+            </xsl:call-template-->
 </xsl:element>
 </xsl:template>
 
