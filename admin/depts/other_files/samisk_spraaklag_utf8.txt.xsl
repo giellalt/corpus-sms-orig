@@ -91,6 +91,7 @@
  </xsl:template>
 -->
 
+<!--
 <xsl:template match="p">
 <xsl:variable name="text" select='current()' />
 <xsl:variable name="type" select='@type' />
@@ -107,14 +108,15 @@
             </xsl:attribute>
             </xsl:if>
 
-            <!--xsl:call-template name="globalTextReplace">
+            <xsl:call-template name="globalTextReplace">
                <xsl:with-param name="inputString" select="$text"/>
                <xsl:with-param name="target" select="'¦/'"/>
                <xsl:with-param name="replacement" select="'ǥ/'"/>
                 <xsl:with-param name="continue" select="0"/>
-            </xsl:call-template-->
+            </xsl:call-template>
 </xsl:element>
 </xsl:template>
+-->
 
 <!-- Add the locations of the parallel files to the variables-->
 
