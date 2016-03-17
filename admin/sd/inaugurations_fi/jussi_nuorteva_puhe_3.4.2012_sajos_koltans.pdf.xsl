@@ -120,9 +120,9 @@
         <!-- <parallel_text xml:lang="smn" location=""/> -->
         <!-- <parallel_text xml:lang="sms" location=""/> -->
         <!-- <parallel_text xml:lang="swe" location=""/> -->
-    <parallel_text location="index.php_option=com_docman_task=doc_download_gid=1814_itemid=10.pdf" xml:lang="sme"/>
-<parallel_text location="index.php_option=com_docman_task=doc_download_gid=1812_itemid=10.pdf" xml:lang="smn"/>
-<parallel_text location="index.php_option=com_docman_task=doc_download_gid=1811_itemid=10.pdf" xml:lang="eng"/>
+    <parallel_text location="jussi_nuorteva_puhe_3.4.2012_sajos_pohjoiss.pdf" xml:lang="sme"/>
+<parallel_text location="jussi_nuorteva_puhe_3.4.2012_sajos_inarins.pdf" xml:lang="smn"/>
+<parallel_text location="jussi_nuorteva_puhe_3.4.2012_sajos_engl.pdf" xml:lang="eng"/>
 </xsl:variable>
 
 

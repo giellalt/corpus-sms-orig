@@ -5,7 +5,7 @@
 
     <!-- Add the metainformation manually -->
     <!-- variable filename contains the original name of the file (from submitter)-->
-    <xsl:variable name="filename" select="'http://www.samediggi.fi/index.php?option=com_docman&amp;task=doc_download&amp;gid=1277&amp;Itemid=10'"/>
+    <xsl:variable name="filename" select="'http://www.samediggi.fi/index.php?option=com_docman&amp;task=doc_download&amp;gid=1832&amp;Itemid=10'"/>
     <xsl:variable name="text_encoding" select="''"/>
     <xsl:variable name="title" select="''"/>
     <xsl:variable name="author1_fn" select="''"/>
@@ -120,10 +120,9 @@
         <!-- <parallel_text xml:lang="smn" location=""/> -->
         <!-- <parallel_text xml:lang="sms" location=""/> -->
         <!-- <parallel_text xml:lang="swe" location=""/> -->
-    <parallel_text location="index.php_option=com_docman_task=doc_download_gid=1262_itemid=10.pdf" xml:lang="sme"/>
-<parallel_text location="index.php_option=com_docman_task=doc_download_gid=1274_itemid=10.pdf" xml:lang="smn"/>
-<parallel_text location="index.php_option=com_docman_task=doc_download_gid=1261_itemid=10.pdf" xml:lang="fin"/>
-<parallel_text location="index.php_option=com_docman_task=doc_download_gid=1260_itemid=10.pdf" xml:lang="eng"/>
+    <parallel_text location="marja_helander_tiedote_pohjoissaame.pdf" xml:lang="sme"/>
+<parallel_text location="marja_helander_tiedote_suomi.pdf" xml:lang="fin"/>
+<parallel_text location="marja_helander_tiedote_inarinsaame.pdf" xml:lang="smn"/>
 </xsl:variable>
 
 
