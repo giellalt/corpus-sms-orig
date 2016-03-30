@@ -122,7 +122,7 @@
         <!-- <parallel_text xml:lang="swe" location=""/> -->
     <parallel_text location="index.php_option=com_docman_task=doc_download_gid=1411_itemid=10.pdf" xml:lang="smn"/>
 <parallel_text location="index.php_option=com_docman_task=doc_download_gid=1410_itemid=10.pdf" xml:lang="sme"/>
-<parallel_text location="index.php_option=com_docman_task=doc_download_gid=1409_itemid=10.pdf" xml:lang="fin"/>
+<parallel_text location="poytakirjasuomeksi.pdf" xml:lang="fin"/>
 </xsl:variable>
 
 

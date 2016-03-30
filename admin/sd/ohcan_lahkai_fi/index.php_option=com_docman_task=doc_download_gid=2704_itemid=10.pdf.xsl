@@ -120,7 +120,7 @@
         <!-- <parallel_text xml:lang="smn" location=""/> -->
         <!-- <parallel_text xml:lang="sms" location=""/> -->
         <!-- <parallel_text xml:lang="swe" location=""/> -->
-    <parallel_text location="index.php_option=com_docman_task=doc_download_gid=2704_itemid=10.pdf" xml:lang="fin"/>
+    <parallel_text location="koltansaamekaantaja_02092015_su_ks.pdf" xml:lang="fin"/>
 </xsl:variable>
 
 

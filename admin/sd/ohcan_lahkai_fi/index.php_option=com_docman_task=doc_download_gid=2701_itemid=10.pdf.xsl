@@ -120,7 +120,7 @@
         <!-- <parallel_text xml:lang="smn" location=""/> -->
         <!-- <parallel_text xml:lang="sms" location=""/> -->
         <!-- <parallel_text xml:lang="swe" location=""/> -->
-    <parallel_text location="index.php_option=com_docman_task=doc_download_gid=2700_itemid=10.pdf" xml:lang="fin"/>
+    <parallel_text location="giellagaldu_kielityontekijat_haettavana_suomi_21.8.2015.pdf" xml:lang="fin"/>
 </xsl:variable>
 
 
