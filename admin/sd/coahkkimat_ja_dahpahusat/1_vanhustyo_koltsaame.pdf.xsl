@@ -121,6 +121,8 @@
         <!-- <parallel_text xml:lang="sms" location=""/> -->
         <!-- <parallel_text xml:lang="swe" location=""/> -->
     <parallel_text location="1_vanhustyo_pohsaame.pdf" xml:lang="sme"/>
+<parallel_text location="1_vanhustyo_insaame.pdf" xml:lang="smn"/>
+<parallel_text location="1_vanhustyo.pdf" xml:lang="fin"/>
 </xsl:variable>
 
 
