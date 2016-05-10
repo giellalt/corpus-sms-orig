@@ -44,6 +44,7 @@
     <xsl:variable name="sub_name" select="'Trond Trosterud'"/>
     <xsl:variable name="sub_email" select="'trond.trosterud@uit.no'"/>
     <xsl:variable name="wordcount" select="''"/>
+    <xsl:variable name="conversion_status" select="'standard'"/>
     <xsl:variable name="metadata" select="'uncomplete'"/>
     <xsl:variable name="template_version" select="' 1.9 '"/>
     <xsl:variable name="current_version" select="'$Revision: 1.7 $'"/>
@@ -108,9 +109,9 @@
 <xsl:variable name="right_margin" select="all=7"/>
 
 <xsl:template match="body/*">
-    <xsl:variable name="text" select='current()' />
-    <xsl:variable name="type" select='@type' />
-    <xsl:variable name="lang" select='@xml:lang' />
+    <xsl:variable name="text" select="current()"/>
+    <xsl:variable name="type" select="@type"/>
+    <xsl:variable name="lang" select="@xml:lang"/>
     <xsl:element name="p">
         <xsl:if test="$type">
             <xsl:attribute name="type">
