@@ -128,6 +128,7 @@
         <!-- <parallel_text xml:lang="sms" location=""/> -->
         <!-- <parallel_text xml:lang="swe" location=""/> -->
     <parallel_text location="koltans_raportt_2015_minim.pdf" xml:lang="fin"/>
+<parallel_text location="raporta_2015_minim..pdf" xml:lang="sme"/>
 </xsl:variable>
 
 
