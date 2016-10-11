@@ -133,8 +133,8 @@
 
         <xsl:call-template name="globalTextReplace">
            <xsl:with-param name="inputString" select="$text"/>
-           <xsl:with-param name="target" select="'ǩiõll ‘laž/'"/>
-           <xsl:with-param name="replacement" select="'ǩiõllʼlaž/'"/>
+           <xsl:with-param name="target" select="'ǩiõll ‘laž/t‘t/´/'"/>
+           <xsl:with-param name="replacement" select="'ǩiõllʼlaž/tʼt/ʹ/'"/>
            <xsl:with-param name="continue" select="0"/>
         </xsl:call-template>
     </xsl:element>
