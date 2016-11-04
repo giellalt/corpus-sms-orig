@@ -7,7 +7,7 @@
     <!-- variable filename contains the original name of the file (from submitter)-->
     <xsl:variable name="filename" select="'http://www.samediggi.fi/index.php?option=com_docman&amp;task=doc_download&amp;gid=2655&amp;Itemid=10'"/>
     <xsl:variable name="text_encoding" select="''"/>
-    <xsl:variable name="title" select="'Sámedikki sámegiela doaimmahat ohcá giellabargi mearreáigásaš ja ollesáigásaš virgegaskavuhtii '"/>
+    <xsl:variable name="title" select="'Sääʹmteeʹǧǧ sääʹmǩiõl koontâr ååcc ǩiõlltuâjjla mieʹrräiggsaž da obbpeiʹvvsaž veʹrǧǧkõskkvuõʹtte'"/>
     <xsl:variable name="author1_fn" select="''"/>
     <xsl:variable name="author1_ln" select="''"/>
     <xsl:variable name="author1_gender" select="'unknown'"/>
@@ -120,7 +120,9 @@
         <!-- <parallel_text xml:lang="smn" location=""/> -->
         <!-- <parallel_text xml:lang="sms" location=""/> -->
         <!-- <parallel_text xml:lang="swe" location=""/> -->
-    <parallel_text location="kielityontekija_alkaen_010615.pdf" xml:lang="fin"/>
+	<parallel_text location="kielityontekija_alkaen_010615.pdf" xml:lang="fin"/>
+	<parallel_text location="kielityontekija_alkaen_010615.pdf" xml:lang="sme"/>
+	<parallel_text location="kielityontekija_alkaen_010615.pdf" xml:lang="smn"/>
 </xsl:variable>
 
 
@@ -132,7 +134,7 @@
         1, 2, 3, 4
         1, 6-10, 15, 20, 25-30
     -->
-    <xsl:variable name="skip_pages" select="''"/>
+    <xsl:variable name="skip_pages" select="'1'"/>
 
     <!--
         Text outside these margins will be ignored.
@@ -161,7 +163,7 @@
     -->
     <xsl:variable name="right_margin" select="''"/>
     <xsl:variable name="left_margin" select="''"/>
-    <xsl:variable name="top_margin" select="''"/>
+    <xsl:variable name="top_margin" select="'2=42'"/>
     <xsl:variable name="bottom_margin" select="''"/>
 
     <xsl:variable name="inner_right_margin" select="''"/>
