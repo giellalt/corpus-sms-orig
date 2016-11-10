@@ -7,7 +7,7 @@
     <!-- variable filename contains the original name of the file (from submitter)-->
     <xsl:variable name="filename" select="'http://www.samediggi.fi/index.php?option=com_docman&amp;task=doc_download&amp;gid=2075&amp;Itemid=10'"/>
     <xsl:variable name="text_encoding" select="''"/>
-    <xsl:variable name="title" select="''"/>
+    <xsl:variable name="title" select="'Lää ́ddjânnam Sää ́mte ́ǧǧ ååcc mie ́rräiggsaž tâ ́vvsää ́m ǩiõlltuâjjla SÁFÁ2-projekte'"/>
     <xsl:variable name="author1_fn" select="''"/>
     <xsl:variable name="author1_ln" select="''"/>
     <xsl:variable name="author1_gender" select="'unknown'"/>
@@ -30,7 +30,7 @@
     <xsl:variable name="author4_born" select="''"/>
     <xsl:variable name="publisher" select="''"/>
     <xsl:variable name="publChannel" select="''"/>
-    <xsl:variable name="year" select="''"/>
+    <xsl:variable name="year" select="'2013'"/>
     <xsl:variable name="ISBN" select="''"/>
     <xsl:variable name="ISSN" select="''"/>
     <xsl:variable name="place" select="''"/>
@@ -122,6 +122,7 @@
         <!-- <parallel_text xml:lang="swe" location=""/> -->
     <parallel_text location="virkailmsafa2_pohjoissaamen_kielityontekija_toukokuu_ak_2013.pdf" xml:lang="smn"/>
 <parallel_text location="virkailmsafa2_pohjoissaamen_kielityontekija_toukokuu_2013.pdf" xml:lang="sme"/>
+<parallel_text location="virkailmsafa2_pohjoissaamen_kielityontekija_toukokuu_2013.pdf" xml:lang="fin"/>
 </xsl:variable>
 
 
