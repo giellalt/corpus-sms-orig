@@ -5,7 +5,7 @@
 
     <!-- Add the metainformation manually -->
     <xsl:variable name="filename" select="'http://ec.europa.eu/avservices/avs/files/euro/092-euro-fi/Euro_koltta_sami.pdf'"/>
-    <xsl:variable name="title" select="'Lääʹ́ddjânnam serdd eurru'"/>
+    <xsl:variable name="title" select="'Lääʹddjânnam serdd eurru'"/>
     <xsl:variable name="author1_fn" select="''"/>
     <xsl:variable name="author1_ln" select="''"/>
     <xsl:variable name="author1_gender" select="'unknown'"/>
@@ -126,8 +126,8 @@
 
         <xsl:call-template name="globalTextReplace">
             <xsl:with-param name="inputString" select="$text"/>
-            <xsl:with-param name="target" select="'¡/³/¥/ˆ/ ́/'"/>
-            <xsl:with-param name="replacement" select="'ǧ/ǩ/ǥ/ǯ/ʹ/'"/>
+            <xsl:with-param name="target" select="'¡/³/¥/ˆ/ ́/′/´/'"/>
+            <xsl:with-param name="replacement" select="'ǧ/ǩ/ǥ/ǯ/ʹ/ʹ/ʹ/'"/>
             <xsl:with-param name="continue" select="0"/>
         </xsl:call-template>
     </xsl:element>
