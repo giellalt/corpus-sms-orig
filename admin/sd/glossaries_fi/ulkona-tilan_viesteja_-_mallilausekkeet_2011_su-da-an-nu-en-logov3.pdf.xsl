@@ -171,8 +171,8 @@
     -->
     <xsl:variable name="right_margin" select="''"/>
     <xsl:variable name="left_margin" select="''"/>
-    <xsl:variable name="top_margin" select="'62'"/>
-    <xsl:variable name="bottom_margin" select="'26'"/>
+    <xsl:variable name="top_margin" select="'1=62'"/>
+    <xsl:variable name="bottom_margin" select="'1=26'"/>
 
     <xsl:variable name="inner_right_margin" select="''"/>
     <xsl:variable name="inner_left_margin" select="''"/>
