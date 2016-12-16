@@ -30,7 +30,7 @@
     <xsl:variable name="author4_born" select="''"/>
     <xsl:variable name="publisher" select="''"/>
     <xsl:variable name="publChannel" select="''"/>
-    <xsl:variable name="year" select="''"/>
+    <xsl:variable name="year" select="'2013'"/>
     <xsl:variable name="ISBN" select="''"/>
     <xsl:variable name="ISSN" select="''"/>
     <xsl:variable name="place" select="''"/>
@@ -170,8 +170,8 @@
     -->
     <xsl:variable name="right_margin" select="''"/>
     <xsl:variable name="left_margin" select="''"/>
-    <xsl:variable name="top_margin" select="''"/>
-    <xsl:variable name="bottom_margin" select="''"/>
+    <xsl:variable name="top_margin" select="'1=52'"/>
+    <xsl:variable name="bottom_margin" select="'1=40'"/>
 
     <xsl:variable name="inner_right_margin" select="''"/>
     <xsl:variable name="inner_left_margin" select="''"/>
