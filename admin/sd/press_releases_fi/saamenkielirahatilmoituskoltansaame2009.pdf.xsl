@@ -7,7 +7,7 @@
     <!-- variable filename contains the original name of the file (from submitter)-->
     <xsl:variable name="filename" select="'http://www.samediggi.fi/index.php?option=com_docman&amp;task=doc_download&amp;gid=934&amp;Itemid=10'"/>
     <xsl:variable name="text_encoding" select="''"/>
-    <xsl:variable name="title" select="'Vuõiggâdvuõttministeria ââlmad ooccâmnalla sää ́m ǩiõll&#700;lää ́jj (1086/2003) 31 §:fâst jurddum veä ́ǩǩtie ́ǧǧid'"/>
+    <xsl:variable name="title" select="'Vuõiggâdvuõttministeria ââlmad ooccâmnalla sää ́m ǩiõllʼlää ́jj (1086/2003) 31 §:fâst jurddum veä ́ǩǩtie ́ǧǧid'"/>
     <xsl:variable name="author1_fn" select="''"/>
     <xsl:variable name="author1_ln" select="''"/>
     <xsl:variable name="author1_gender" select="'unknown'"/>
@@ -127,9 +127,9 @@
         <!-- <parallel_text xml:lang="smn" location=""/> -->
         <!-- <parallel_text xml:lang="sms" location=""/> -->
         <!-- <parallel_text xml:lang="swe" location=""/> -->
-    <parallel_text location="_microsoft_word_-_oikeusministeri.pdf" xml:lang="smn"/>
-<parallel_text location="_microsoft_word_-_oikeusministeri.pdf" xml:lang="sme"/>
-<parallel_text location="_microsoft_word_-_oikeusministeri.pdf" xml:lang="fin"/>
+    <parallel_text location="microsoft_word_-_oikeusministeri.pdf" xml:lang="smn"/>
+<parallel_text location="microsoft_word_-_oikeusministeri.pdf" xml:lang="sme"/>
+<parallel_text location="microsoft_word_-_oikeusministeri.pdf" xml:lang="fin"/>
 </xsl:variable>
 
 
