@@ -11,9 +11,9 @@
         These days it is automatically added by the add_files_to_corpus tool.
         http://divvun.no/doc/ling/CorpusTools.html#add_files_to_corpus
     -->
-    <xsl:variable name="filename" select="'sote_savasukoltankielinen.pdf'"/>
+    <xsl:variable name="filename" select="'http://www.inari.fi/se/se/kaazzkoozz/cuovtemkaazzkoozz/peivvhaidd/ooccmos-da-muttaz.html'"/>
     <xsl:variable name="text_encoding" select="''"/>
-    <xsl:variable name="title" select="'SÄʹMMLAŽ PEIʹVVHÅIDDÂʹKKSAI PEÂMMPLAAN'"/>
+    <xsl:variable name="title" select="''"/>
     <!--
         Information of the first author: first name, last name,
         date or year of birth, nationality.
@@ -94,10 +94,12 @@
     <xsl:variable name="translator_born" select="''"/>
     <xsl:variable name="translator_nat" select="''"/>
     <!-- select license type: free, standard or other -->
-    <xsl:variable name="license_type" select="'free'"/>
+    <xsl:variable name="license_type" select="''"/>
+    <!-- e.g. Sámediggi journal number -->
+    <xsl:variable name="contract_id" select="''"/>
     <!-- The name and email of the submitter -->
-    <xsl:variable name="sub_name" select="'Trond Trosterud'"/>
-    <xsl:variable name="sub_email" select="'trond.trosterud@uit.no'"/>
+    <xsl:variable name="sub_name" select="''"/>
+    <xsl:variable name="sub_email" select="''"/>
     <!-- Keep empty, this is automatically filled in by CorpusTools -->
     <xsl:variable name="wordcount" select="''"/>
     <!-- This variable can have the following values:
@@ -113,7 +115,7 @@
     <!-- Valid values are complete and uncomplete -->
     <xsl:variable name="metadata" select="'uncomplete'"/>
     <!-- Automatically filled in by CorpusTools -->
-    <xsl:variable name="template_version" select="'$Revision: 64438 $'"/>
+    <xsl:variable name="template_version" select="'$Revision: 150288 $'"/>
     <!-- Automatically filled in by CorpusTools -->
     <xsl:variable name="current_version" select="'Revision'"/>
     <!-- Free text field for notes -->
@@ -169,9 +171,9 @@
         <parallel_text xml:lang="nob" location=""/>
         <parallel_text xml:lang="rus" location=""/>
         <parallel_text xml:lang="sma" location=""/>
-        <parallel_text xml:lang="sme" location=""/>
+        <parallel_text xml:lang="sme" location="ohcan-ja-nuppastusat.html"/>
         <parallel_text xml:lang="smj" location=""/>
-        <parallel_text xml:lang="smn" location=""/>
+        <parallel_text xml:lang="smn" location="uuccam-ja-nubastusah.html"/>
         <parallel_text xml:lang="sms" location=""/>
         <parallel_text xml:lang="swe" location=""/>
     </xsl:variable>
@@ -226,10 +228,10 @@
         all=9, 8=12
         1;3;8=20, 4;5;7=10
     -->
-    <xsl:variable name="right_margin" select="'all=7'"/>
-    <xsl:variable name="left_margin" select="'all=7'"/>
-    <xsl:variable name="top_margin" select="'all=7'"/>
-    <xsl:variable name="bottom_margin" select="'all=7'"/>
+    <xsl:variable name="right_margin" select="''"/>
+    <xsl:variable name="left_margin" select="''"/>
+    <xsl:variable name="top_margin" select="''"/>
+    <xsl:variable name="bottom_margin" select="''"/>
 
     <!--
         Cut out a part from a page in pdf documents. Has the same format
@@ -346,30 +348,5 @@
         </xsl:element>
     </xsl:template>
     -->
-
-<xsl:template match="p[parent::body][not(./em | ./span)][text()]">
-    <xsl:variable name="text" select="current()"/>
-    <xsl:variable name="type" select="@type"/>
-    <xsl:variable name="lang" select="@xml:lang"/>
-    <xsl:element name="p">
-        <xsl:if test="$type">
-            <xsl:attribute name="type">
-                <xsl:value-of select="$type"/>
-            </xsl:attribute>
-        </xsl:if>
-        <xsl:if test="$lang">
-            <xsl:attribute name="xml:lang">
-                <xsl:value-of select="$lang"/>
-            </xsl:attribute>
-        </xsl:if>
-
-        <xsl:call-template name="globalTextReplace">
-           <xsl:with-param name="inputString" select="$text"/>
-           <xsl:with-param name="target" select="'ǩiõll ‘laž/t‘t/´/'"/>
-           <xsl:with-param name="replacement" select="'ǩiõllʼlaž/tʼt/ʹ/'"/>
-           <xsl:with-param name="continue" select="0"/>
-        </xsl:call-template>
-    </xsl:element>
-</xsl:template>
 
 </xsl:stylesheet>
