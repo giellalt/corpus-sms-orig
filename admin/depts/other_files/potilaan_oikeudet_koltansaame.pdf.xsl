@@ -346,7 +346,7 @@
         </xsl:element>
     </xsl:template>
     -->
-<!--
+
 <xsl:template match="body/*">
     <xsl:variable name="text" select="current()"/>
     <xsl:variable name="type" select="@type"/>
@@ -371,6 +371,6 @@
         </xsl:call-template>
     </xsl:element>
 </xsl:template>
--->
+
 
 </xsl:stylesheet>
