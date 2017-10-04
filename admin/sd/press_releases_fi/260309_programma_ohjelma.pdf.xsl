@@ -320,7 +320,7 @@
         other markup, as such markup otherwise will be removed.
     -->
 
-    
+    <!--
     <xsl:template match="p[parent::body][not(./em | ./span)][text()]">
         <xsl:variable name="text" select='current()' />
         <xsl:variable name="type" select='@type' />

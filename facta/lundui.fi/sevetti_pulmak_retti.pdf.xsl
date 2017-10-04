@@ -109,7 +109,7 @@
         * standard:     a usual doc, meant to be used as part of the standard corpus
         * unsupported:  document that cannot be converted by our conversion tools
     -->
-    <xsl:variable name="conversion_status" select="'standard'"/>
+    <xsl:variable name="conversion_status" select="'unsupported'"/>
     <!-- Valid values are complete and uncomplete -->
     <xsl:variable name="metadata" select="'uncomplete'"/>
     <!-- Automatically filled in by CorpusTools -->
@@ -365,8 +365,8 @@
 
         <xsl:call-template name="globalTextReplace">
             <xsl:with-param name="inputString" select="$text"/>
-            <xsl:with-param name="target" select="' ́/´/′/´/'"/>
-            <xsl:with-param name="replacement" select="'ʹ/ʹ/ʹ/ʹ/'"/>
+            <xsl:with-param name="target" select="'³/¥/'"/>
+            <xsl:with-param name="replacement" select="'ǩ/ǥ/'"/>
             <xsl:with-param name="continue" select="0"/>
         </xsl:call-template>
     </xsl:element>
