@@ -109,7 +109,7 @@
         * standard:     a usual doc, meant to be used as part of the standard corpus
         * unsupported:  document that cannot be converted by our conversion tools
     -->
-    <xsl:variable name="conversion_status" select="'unsupported'"/>
+    <xsl:variable name="conversion_status" select="'standard'"/>
     <!-- Valid values are complete and uncomplete -->
     <xsl:variable name="metadata" select="'uncomplete'"/>
     <!-- Automatically filled in by CorpusTools -->
@@ -127,7 +127,7 @@
         other languages. Set the variable monolingual to '1' to turn off
         language recognition (treating everything as mainlang)
     -->
-    <xsl:variable name="monolingual" select="''"/>
+    <xsl:variable name="monolingual" select="'1'"/>
 
     <!--
         If monolingual is not set, the document is multilingual.
