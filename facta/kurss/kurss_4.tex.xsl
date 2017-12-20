@@ -95,6 +95,8 @@
     <xsl:variable name="translator_nat" select="''"/>
     <!-- select license type: free, standard or other -->
     <xsl:variable name="license_type" select="''"/>
+    <!-- e.g. Sámediggi journal number -->
+    <xsl:variable name="contract_id" select="''"/>
     <!-- The name and email of the submitter -->
     <xsl:variable name="sub_name" select="''"/>
     <xsl:variable name="sub_email" select="''"/>
@@ -281,6 +283,11 @@
     <xsl:variable name="linespacing" select="''"/>
 
     <!--
+        Choose which chapters to exclude from an epub file.
+    -->
+    <xsl:variable name="epub_excluded_chapters" select="''"/>
+
+    <!--
         Information about what is normal text size in pdf documents.
     -->
     <xsl:variable name="main_sizes" select="''"/>
@@ -347,10 +354,10 @@
     </xsl:template>
     -->
 
-    <xsl:template match="p[parent::body][not(./em | ./span)][text()]">
-        <xsl:variable name="text" select='current()' />
-        <xsl:variable name="type" select='@type' />
-        <xsl:variable name="lang" select='@xml:lang' />
+<xsl:template match="p[parent::body][not(./em | ./span)][text()]">
+        <xsl:variable name="text" select="current()"/>
+        <xsl:variable name="type" select="@type"/>
+        <xsl:variable name="lang" select="@xml:lang"/>
         <xsl:element name="p">
             <xsl:if test="$type">
                 <xsl:attribute name="type">
