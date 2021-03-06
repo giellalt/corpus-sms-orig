@@ -13,7 +13,7 @@
     -->
     <xsl:variable name="filename" select="'http://ec.europa.eu/avservices/avs/files/euro/092-euro-fi/Euro_koltta_sami.pdf'"/>
     <xsl:variable name="text_encoding" select="''"/>
-    <xsl:variable name="title" select="'Lääʹddjânnam serdd eurru'"/>
+    <xsl:variable name="title" select="'Lääʹddjânnam serdd eurru'"/>
     <!--
         Information of the first author: first name, last name,
         date or year of birth, nationality.
