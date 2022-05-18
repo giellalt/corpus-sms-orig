@@ -67,7 +67,7 @@
     <xsl:variable name="author5_fn" select="'Hanna-Maaria'"/>
     <xsl:variable name="author5_ln" select="'Kiprianoff'"/>
     <xsl:variable name="author5_gender" select="'f'"/>
-    <xsl:variable name="author5_nat" select="''"/>
+    <xsl:variable name="author5_nat" select="'FI'"/>
     <xsl:variable name="author5_born" select="''"/>
 
     <xsl:variable name="publisher" select="''"/>
